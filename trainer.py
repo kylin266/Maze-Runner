@@ -1,7 +1,7 @@
 from __future__ import print_function
 import os, sys, time, datetime, json, random
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 
 import numpy as np
 from keras.models import Sequential
@@ -14,11 +14,6 @@ from game import next_move, completion_check
 
 # Exploration factor
 epsilon = 0.1
-
-maze = np.array([[1., 0., 1., 1., 1., 1., 1.], [1., 1., 1., 0., 0., 1., 0.],
-                 [0., 0., 0., 1., 1., 1., 0.], [1., 1., 1., 1., 0., 0., 1.],
-                 [1., 0., 0., 0., 1., 1., 1.], [1., 0., 1., 1., 1., 1., 1.],
-                 [1., 1., 1., 0., 1., 1., 1.]])
 
 
 class Experience(object):
@@ -194,12 +189,3 @@ def build_model(maze, lr=0.001):
     return model
 
 
-qmaze = Qmaze(maze)
-show(qmaze)
-model = build_model(maze)
-trained_model, seconds = qtrain(model,
-                                maze,
-                                epochs=1000,
-                                max_memory=8 * maze.size,
-                                data_size=32)
-trained_model.save(os.path.join, './model')

@@ -165,6 +165,5 @@ def show(qmaze):
     rat_row, rat_col, _ = qmaze.state
     canvas[rat_row, rat_col] = 0.3  # rat cell
     canvas[nrows - 1, ncols - 1] = 0.9  # cheese cell
-    img = plt.imshow(canvas, interpolation='none', cmap='gray')
-    plt.show()
-    return img
+
+    return plt,canvas;
