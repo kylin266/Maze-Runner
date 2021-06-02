@@ -1,0 +1,72 @@
+E:\DevPractice\MazeRunner\venv\Scripts\python.exe E:/resource2/Maze-Runner/test.py
+2021-06-02 00:59:42.655889: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2021-06-02 00:59:42.656190: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-06-02 00:59:45.882864: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library nvcuda.dll
+2021-06-02 00:59:45.887268: E tensorflow/stream_executor/cuda/cuda_driver.cc:328] failed call to cuInit: CUDA_ERROR_UNKNOWN: unknown error
+2021-06-02 00:59:45.893820: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: DESKTOP-9FK6V9E
+2021-06-02 00:59:45.894190: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: DESKTOP-9FK6V9E
+2021-06-02 00:59:45.894918: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-02 00:59:46.288083: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+
+
+Epoch: 000/14999 | Loss: 0.0262 | Episodes: 112 | Win count: 0 | Win rate: 0.000 | time: 388.1 seconds
+Epoch: 001/14999 | Loss: 0.0020 | Episodes: 104 | Win count: 0 | Win rate: 0.000 | time: 12.66 minutes
+Epoch: 002/14999 | Loss: 0.0023 | Episodes: 11 | Win count: 1 | Win rate: 0.000 | time: 13.35 minutes
+Epoch: 003/14999 | Loss: 0.0051 | Episodes: 105 | Win count: 1 | Win rate: 0.000 | time: 20.04 minutes
+Epoch: 004/14999 | Loss: 0.0028 | Episodes: 9 | Win count: 2 | Win rate: 0.000 | time: 20.58 minutes
+Epoch: 005/14999 | Loss: 0.0029 | Episodes: 104 | Win count: 2 | Win rate: 0.000 | time: 26.53 minutes
+Epoch: 006/14999 | Loss: 0.0174 | Episodes: 104 | Win count: 2 | Win rate: 0.000 | time: 33.00 minutes
+Epoch: 007/14999 | Loss: 0.0018 | Episodes: 102 | Win count: 2 | Win rate: 0.000 | time: 39.24 minutes
+Epoch: 008/14999 | Loss: 0.0011 | Episodes: 104 | Win count: 2 | Win rate: 0.000 | time: 45.20 minutes
+Epoch: 009/14999 | Loss: 0.0013 | Episodes: 107 | Win count: 2 | Win rate: 0.000 | time: 51.36 minutes
+Epoch: 010/14999 | Loss: 0.0476 | Episodes: 102 | Win count: 2 | Win rate: 0.000 | time: 56.98 minutes
+Epoch: 011/14999 | Loss: 0.0012 | Episodes: 104 | Win count: 2 | Win rate: 0.000 | time: 63.26 minutes
+Epoch: 012/14999 | Loss: 0.0014 | Episodes: 29 | Win count: 3 | Win rate: 0.000 | time: 64.93 minutes
+Epoch: 013/14999 | Loss: 0.0016 | Episodes: 102 | Win count: 3 | Win rate: 0.000 | time: 1.17 hours
+Epoch: 014/14999 | Loss: 0.0109 | Episodes: 9 | Win count: 4 | Win rate: 0.000 | time: 1.18 hours
+Epoch: 015/14999 | Loss: 0.0050 | Episodes: 103 | Win count: 4 | Win rate: 0.000 | time: 1.27 hours
+Epoch: 016/14999 | Loss: 0.0065 | Episodes: 107 | Win count: 4 | Win rate: 0.000 | time: 1.36 hours
+Epoch: 017/14999 | Loss: 0.0699 | Episodes: 105 | Win count: 4 | Win rate: 0.000 | time: 1.45 hours
+Epoch: 018/14999 | Loss: 0.0204 | Episodes: 112 | Win count: 5 | Win rate: 0.000 | time: 1.55 hours
+Epoch: 019/14999 | Loss: 0.0130 | Episodes: 83 | Win count: 6 | Win rate: 0.000 | time: 1.63 hours
+Epoch: 020/14999 | Loss: 0.0171 | Episodes: 18 | Win count: 7 | Win rate: 0.000 | time: 1.64 hours
+Epoch: 021/14999 | Loss: 0.0094 | Episodes: 10 | Win count: 8 | Win rate: 0.000 | time: 1.65 hours
+Epoch: 022/14999 | Loss: 0.0039 | Episodes: 31 | Win count: 9 | Win rate: 0.000 | time: 1.68 hours
+Epoch: 023/14999 | Loss: 0.0076 | Episodes: 12 | Win count: 10 | Win rate: 0.000 | time: 1.69 hours
+Epoch: 024/14999 | Loss: 0.0104 | Episodes: 105 | Win count: 10 | Win rate: 0.417 | time: 1.78 hours
+Epoch: 025/14999 | Loss: 0.0156 | Episodes: 29 | Win count: 11 | Win rate: 0.458 | time: 1.80 hours
+Epoch: 026/14999 | Loss: 0.0048 | Episodes: 21 | Win count: 12 | Win rate: 0.458 | time: 1.82 hours
+Epoch: 027/14999 | Loss: 0.0031 | Episodes: 7 | Win count: 13 | Win rate: 0.500 | time: 1.83 hours
+Epoch: 028/14999 | Loss: 0.0018 | Episodes: 93 | Win count: 14 | Win rate: 0.500 | time: 1.91 hours
+Epoch: 029/14999 | Loss: 0.0030 | Episodes: 10 | Win count: 15 | Win rate: 0.542 | time: 1.91 hours
+Epoch: 030/14999 | Loss: 0.0032 | Episodes: 4 | Win count: 16 | Win rate: 0.583 | time: 1.92 hours
+Epoch: 031/14999 | Loss: 0.0014 | Episodes: 3 | Win count: 17 | Win rate: 0.625 | time: 1.92 hours
+Epoch: 032/14999 | Loss: 0.0012 | Episodes: 8 | Win count: 18 | Win rate: 0.667 | time: 1.93 hours
+Epoch: 033/14999 | Loss: 0.0017 | Episodes: 4 | Win count: 19 | Win rate: 0.708 | time: 1.93 hours
+Epoch: 034/14999 | Loss: 0.0027 | Episodes: 5 | Win count: 20 | Win rate: 0.750 | time: 1.93 hours
+Epoch: 035/14999 | Loss: 0.0044 | Episodes: 26 | Win count: 21 | Win rate: 0.792 | time: 1.96 hours
+Epoch: 036/14999 | Loss: 0.0014 | Episodes: 20 | Win count: 22 | Win rate: 0.792 | time: 1.97 hours
+Epoch: 037/14999 | Loss: 0.0019 | Episodes: 27 | Win count: 23 | Win rate: 0.833 | time: 2.00 hours
+Epoch: 038/14999 | Loss: 0.0006 | Episodes: 22 | Win count: 24 | Win rate: 0.833 | time: 2.01 hours
+Epoch: 039/14999 | Loss: 0.0057 | Episodes: 4 | Win count: 25 | Win rate: 0.875 | time: 2.02 hours
+Epoch: 040/14999 | Loss: 0.0014 | Episodes: 20 | Win count: 26 | Win rate: 0.917 | time: 2.03 hours
+Epoch: 041/14999 | Loss: 0.0031 | Episodes: 8 | Win count: 27 | Win rate: 0.958 | time: 2.04 hours
+Epoch: 042/14999 | Loss: 0.0010 | Episodes: 22 | Win count: 28 | Win rate: 0.958 | time: 2.06 hours
+Epoch: 043/14999 | Loss: 0.0020 | Episodes: 21 | Win count: 29 | Win rate: 0.958 | time: 2.08 hours
+Epoch: 044/14999 | Loss: 0.0024 | Episodes: 6 | Win count: 30 | Win rate: 0.958 | time: 2.08 hours
+Epoch: 045/14999 | Loss: 0.0011 | Episodes: 2 | Win count: 31 | Win rate: 0.958 | time: 2.08 hours
+Epoch: 046/14999 | Loss: 0.0006 | Episodes: 2 | Win count: 32 | Win rate: 0.958 | time: 2.08 hours
+Epoch: 047/14999 | Loss: 0.0017 | Episodes: 22 | Win count: 33 | Win rate: 0.958 | time: 2.10 hours
+Epoch: 048/14999 | Loss: 0.0010 | Episodes: 18 | Win count: 34 | Win rate: 1.000 | time: 2.12 hours
+Epoch: 049/14999 | Loss: 0.0006 | Episodes: 7 | Win count: 35 | Win rate: 1.000 | time: 2.13 hours
+Epoch: 050/14999 | Loss: 0.0011 | Episodes: 8 | Win count: 36 | Win rate: 1.000 | time: 2.14 hours
+Epoch: 051/14999 | Loss: 0.0008 | Episodes: 1 | Win count: 37 | Win rate: 1.000 | time: 2.15 hours
+Epoch: 052/14999 | Loss: 0.0006 | Episodes: 15 | Win count: 38 | Win rate: 1.000 | time: 2.16 hours
+Epoch: 053/14999 | Loss: 0.0001 | Episodes: 3 | Win count: 39 | Win rate: 1.000 | time: 2.17 hours
+Epoch: 054/14999 | Loss: 0.0270 | Episodes: 15 | Win count: 40 | Win rate: 1.000 | time: 2.19 hours
+Reached 100% win rate at epoch: 54
+files: model.h5, model.json
+n_epoch: 54, max_mem: 392, data: 32, time: 2.20 hours
+
+Process finished with exit code 0
