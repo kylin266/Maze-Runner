@@ -91,7 +91,6 @@ def qtrain(model, maze, **opt):
         qmaze.reset(rat_cell)
         game_over = False
 
-        # get initial envstate (1d flattened canvas)
         envstate = qmaze.observe()
 
         n_episodes = 0
@@ -99,13 +98,11 @@ def qtrain(model, maze, **opt):
             valid_actions = qmaze.valid_actions()
             if not valid_actions: break
             prev_envstate = envstate
-            # Get next action
             if np.random.rand() < epsilon:
                 action = random.choice(valid_actions)
             else:
                 action = np.argmax(experience.predict(prev_envstate))
 
-            # Apply action, get reward and new envstate
             envstate, reward, game_status = qmaze.act(action)
             if game_status == 'win':
                 win_history.append(1)
@@ -116,12 +113,10 @@ def qtrain(model, maze, **opt):
             else:
                 game_over = False
 
-            # Store episode (experience)
             episode = [prev_envstate, action, reward, envstate, game_over]
             experience.remember(episode)
             n_episodes += 1
 
-            # Train neural network model
             inputs, targets = experience.get_data(data_size=data_size)
             h = model.fit(
                 inputs,
@@ -141,15 +136,13 @@ def qtrain(model, maze, **opt):
         print(
             template.format(epoch, n_epoch - 1, loss, n_episodes,
                             sum(win_history), win_rate, t))
-        # we simply check if training has exhausted all free cells and if in all
-        # cases the agent won
+
         if win_rate > 0.9: epsilon = 0.05
         if sum(win_history[-hsize:]) == hsize and completion_check(
                 model, qmaze):
             print("Reached 100%% win rate at epoch: %d" % (epoch, ))
             break
 
-    # Save trained model weights and architecture, this will be used by the visualization code
     h5file = name + ".h5"
     json_file = name + ".json"
     model.save_weights(h5file, overwrite=True)
@@ -165,7 +158,7 @@ def qtrain(model, maze, **opt):
     return model, seconds
 
 
-# This is a small utility for printing readable time strings:
+# This is a small utility for printing readable time strings:x
 def format_time(seconds):
     if seconds < 400:
         s = float(seconds)

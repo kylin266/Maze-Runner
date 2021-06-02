@@ -2,8 +2,8 @@ from __future__ import print_function
 import numpy as np
 import matplotlib.pyplot as plt
 
-visited_mark = 0.8  # Cells visited by the rat will be painted by gray 0.8
-rat_mark = 0.5  # The current rat cell will be painteg by gray 0.5
+visited_mark = 0.8
+rat_mark = 0.5
 LEFT = 0
 UP = 1
 RIGHT = 2
@@ -22,8 +22,7 @@ class Qmaze(object):
     def __init__(self, maze, rat=(0, 0)):
         self._maze = np.array(maze)
         nrows, ncols = self._maze.shape
-        self.target = (nrows - 1, ncols - 1
-                       )  # target cell where the "cheese" is
+        self.target = (nrows - 1, ncols - 1)
         self.free_cells = [(r, c) for r in range(nrows) for c in range(ncols)
                            if self._maze[r, c] == 1.0]
         self.free_cells.remove(self.target)
