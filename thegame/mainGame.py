@@ -1,9 +1,6 @@
 
-from game_move import *
+from thegame.game_move import *
 from maze import *
-import os, sys, time, datetime, json, random
-from keras.models import Sequential
-from keras.layers.core import Dense, Activation
 from trainer import build_model
 
 # load weights into new model
