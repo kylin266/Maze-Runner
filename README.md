@@ -1,5 +1,10 @@
 # Maze-Runner
-Based on https://www.samyzaf.com/ML/rl/qmaze.html
+```
+Based on Samy Zafrany
+```
+![image](https://user-images.githubusercontent.com/45141899/120445212-9832e780-c3b2-11eb-9c97-e56201a0203e.png)
+
+
 ```
 Original Maze:
 ```
